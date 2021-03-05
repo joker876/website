@@ -11,30 +11,32 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Sintony:wght@700&display=swap" rel="stylesheet">
     <link rel='stylesheet' href="styles.css">
+    <script src="index.js"></script>
 </head>
 
 <body>
     <header class="header">
-        <div id="logo-container">
-            <img class="logo" src="images/logo.png" alt="logo">
-            <span class="name">joker876</span>
-        </div>
-        <div class="hamburger-container" id="hamburger">
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+        <a href="#" class="logo-container">
+                <img class="logo" src="images/logo.png" alt="logo">
+                <span class="name">joker876</span>
+        </a>
+        <div class="hamburger" id="hamburger" onclick="toggleNavlinks()">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
         <nav class="navbar-container">
-            <ul class="navbar">
-                <li><a class="nav-link" href="#">Home</a></li>
-                <li><a class="nav-link" href="#">Projects</a></li>
-                <li><a class="nav-link" href="#">About</a></li>
-                <li><a class="nav-link" href="#">Contact</a></li>
+            <ul class="navbar" id="navbar">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
+    <div class="content">
+        <div id="home"></div>
+    </div>
     <footer class="rights-reserved">© 2021 joker876. All rights reserved.</footer>
 </body>
 
